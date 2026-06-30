@@ -1,0 +1,33 @@
+column,meaning,example,required
+trade_id,Unique ID for each row/trade,T001,yes
+source_type,Where the row came from,demo_trade/backtest/mt5_history/synthetic,yes
+symbol,Forex/CFD symbol,"XAUUSD, EURUSD",yes
+timeframe,Entry timeframe,"5m, 15m",yes
+action,Trade direction,BUY or SELL,yes
+setup_type,Reason/setup category,"liquidity_sweep, breakout, reversal",yes
+session,Trading session,"asia, london, new_york, overlap",yes
+market_regime,Market condition,"bullish, bearish, sideways",yes
+news_risk,News danger at entry,"low, medium, high",yes
+spread_pips,Spread at entry in pips,1.2,yes
+atr_pips,ATR/volatility in pips,14.5,yes
+rr_ratio,Risk-reward ratio,2.5,yes
+rule_confidence,Blue rule-based confidence before ML,82,yes
+tf_alignment,"1 if timeframes agree, 0 if not",1,yes
+liquidity_sweep,"1 yes, 0 no",1,yes
+fvg_present,"1 yes, 0 no",0,yes
+order_block_present,"1 yes, 0 no",1,yes
+candlestick_pattern,Main candle pattern,bullish_engulfing,yes for Phase 14+
+candlestick_bias,bullish/bearish/neutral,bullish,yes for Phase 14+
+candlestick_strength,0-100 candle confidence,75,yes for Phase 14+
+dxy_bias,USD strength context,usd_bullish/usd_bearish/neutral,optional
+source_knowledge,Knowledge source tag,candlestick/smc_ict/booming_bulls_notes,optional
+entry_time,Entry date-time,2026-01-05 10:15:00,optional but useful
+exit_time,Exit date-time,2026-01-05 11:30:00,optional but useful
+entry_price,Entry price,2340.50,optional
+stop_loss,Stop loss price,2335.00,optional
+take_profit_1,TP1 price,2347.00,optional
+take_profit_2,TP2 price,2353.00,optional
+exit_price,Exit price,2351.00,optional
+result,Final label the model learns,win/loss/breakeven,yes
+pnl_r,Profit/loss in R multiple,"2.0, -1.0",yes
+notes,Human note explaining setup,London sweep with bullish engulfing,optional

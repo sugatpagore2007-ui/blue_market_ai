@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "created_at": "2026-06-27T07:04:26+00:00",
+      "task": "Validate any new internet strategy lesson with backtest before trusting it.",
+      "status": "queued",
+      "source": "phase16"
+    },
+    {
+      "created_at": "2026-06-27T07:04:26+00:00",
+      "task": "Compare confidence buckets 80-85, 85-90, 90+ against actual closed-trade results.",
+      "status": "queued",
+      "source": "phase16"
+    },
+    {
+      "created_at": "2026-06-27T07:04:26+00:00",
+      "task": "Rank Gold separately from other pairs because Gold has a reserved quota slot.",
+      "status": "queued",
+      "source": "phase16"
+    },
+    {
+      "created_at": "2026-06-27T07:04:26+00:00",
+      "task": "Replay no-trade decisions to learn if skipped A+ setups later moved profitably.",
+      "status": "queued",
+      "source": "phase16"
+    }
+  ],
+  "updated_at": "2026-06-27T07:04:26+00:00"
+}

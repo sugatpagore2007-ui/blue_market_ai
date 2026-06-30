@@ -1,0 +1,39 @@
+[
+  {
+    "name": "DailyFX Market News RSS",
+    "url": "https://www.dailyfx.com/feeds/market-news",
+    "kind": "rss",
+    "trusted": true,
+    "enabled": true,
+    "tags": [
+      "forex",
+      "macro",
+      "market_news"
+    ]
+  },
+  {
+    "name": "FXStreet News RSS",
+    "url": "https://www.fxstreet.com/rss/news",
+    "kind": "rss",
+    "trusted": true,
+    "enabled": true,
+    "tags": [
+      "forex",
+      "macro",
+      "market_news"
+    ]
+  },
+  {
+    "name": "Yahoo Finance FX/Gold Headlines",
+    "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=EURUSD=X,GBPUSD=X,JPY=X,GC=F,BTC-USD&region=US&lang=en-US",
+    "kind": "rss",
+    "trusted": true,
+    "enabled": true,
+    "tags": [
+      "forex",
+      "gold",
+      "crypto",
+      "headlines"
+    ]
+  }
+]

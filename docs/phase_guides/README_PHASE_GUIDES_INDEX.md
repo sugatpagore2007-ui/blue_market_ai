@@ -1,0 +1,16 @@
+# Blue AI Phase Guides Index
+
+All phase-specific guide files are kept in this single folder to keep the project root clean.
+
+- FIX_NOTES_PHASE9_2.txt
+- PHASE11_DATASET_ML_GUIDE.md
+- PHASE12_VIDEO_KNOWLEDGE_GUIDE.md
+- PHASE13_CANDLESTICK_INTELLIGENCE_GUIDE.md
+- PHASE14_BOOMING_BULLS_ML_GUIDE.md
+- PHASE15_2_BACKGROUND_AUTO_LEARNING_GUIDE.md
+- PHASE15_3_READY_ML_DATASETS_GUIDE.md
+- PHASE15_3_READY_ML_HOTFIX.md
+- PHASE15_AUTO_HISTORY_LEARNING_GUIDE.md
+- README_READY_ML_DATASETS.md
+
+- `PHASE15_7_WIN_RATE_INTELLIGENCE_GUIDE.md` — connected account + journal + ML dataset win-rate reports.

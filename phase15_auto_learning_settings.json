@@ -1,0 +1,8 @@
+{
+  "auto_learning_enabled": true,
+  "auto_retrain_enabled": true,
+  "auto_retrain_after_new_rows": 25,
+  "learning_can_block_trades": true,
+  "learning_can_place_trades": false,
+  "last_updated": "2026-06-22T09:06:25.695760"
+}

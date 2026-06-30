@@ -1,0 +1,108 @@
+{
+  "enabled": true,
+  "background": true,
+  "interval_seconds": 21600,
+  "mode": "official_api_or_local_file_only",
+  "notes": [
+    "Use official CME API/DataMine/export files only.",
+    "Do not scrape protected CME pages.",
+    "Real-time CME data may need licensing/entitlement."
+  ],
+  "optional_env": {
+    "CME_API_URL": "Official/user-owned endpoint returning JSON context. Leave empty to use local snapshots.",
+    "CME_API_KEY": "Optional authorization token if your endpoint requires it."
+  },
+  "symbol_map": {
+    "xauusd": {
+      "contract": "GC",
+      "name": "COMEX Gold Futures",
+      "venue": "COMEX",
+      "blue_symbol": "XAUUSD"
+    },
+    "gold": {
+      "contract": "GC",
+      "name": "COMEX Gold Futures",
+      "venue": "COMEX",
+      "blue_symbol": "XAUUSD"
+    },
+    "xagusd": {
+      "contract": "SI",
+      "name": "COMEX Silver Futures",
+      "venue": "COMEX",
+      "blue_symbol": "XAGUSD"
+    },
+    "silver": {
+      "contract": "SI",
+      "name": "COMEX Silver Futures",
+      "venue": "COMEX",
+      "blue_symbol": "XAGUSD"
+    },
+    "usoil": {
+      "contract": "CL",
+      "name": "NYMEX WTI Crude Oil Futures",
+      "venue": "NYMEX",
+      "blue_symbol": "USOIL"
+    },
+    "oil": {
+      "contract": "CL",
+      "name": "NYMEX WTI Crude Oil Futures",
+      "venue": "NYMEX",
+      "blue_symbol": "USOIL"
+    },
+    "ustec": {
+      "contract": "NQ",
+      "name": "E-mini Nasdaq-100 Futures",
+      "venue": "CME",
+      "blue_symbol": "USTEC"
+    },
+    "nasdaq": {
+      "contract": "NQ",
+      "name": "E-mini Nasdaq-100 Futures",
+      "venue": "CME",
+      "blue_symbol": "USTEC"
+    },
+    "eurusd": {
+      "contract": "6E",
+      "name": "Euro FX Futures",
+      "venue": "CME",
+      "blue_symbol": "EURUSD"
+    },
+    "gbpusd": {
+      "contract": "6B",
+      "name": "British Pound Futures",
+      "venue": "CME",
+      "blue_symbol": "GBPUSD"
+    },
+    "usdjpy": {
+      "contract": "6J",
+      "name": "Japanese Yen Futures",
+      "venue": "CME",
+      "blue_symbol": "USDJPY"
+    },
+    "btcusd": {
+      "contract": "BTC",
+      "name": "CME Bitcoin Futures",
+      "venue": "CME",
+      "blue_symbol": "BTCUSD"
+    },
+    "btc": {
+      "contract": "BTC",
+      "name": "CME Bitcoin Futures",
+      "venue": "CME",
+      "blue_symbol": "BTCUSD"
+    },
+    "ethusd": {
+      "contract": "ETH",
+      "name": "CME Ether Futures",
+      "venue": "CME",
+      "blue_symbol": "ETHUSD"
+    },
+    "eth": {
+      "contract": "ETH",
+      "name": "CME Ether Futures",
+      "venue": "CME",
+      "blue_symbol": "ETHUSD"
+    }
+  },
+  "local_csv_template": "datasets/cme/cme_context_manual.csv"
+}

@@ -1,0 +1,2 @@
+symbol,timeframe,candlestick_bias,candlestick_pattern,candlestick_strength,candlestick_pattern_count,talib_available,talib_patterns_detected,result,pnl_r
+XAUUSD,5m,bullish,bullish_engulfing,5,3,false,0,win,2.0

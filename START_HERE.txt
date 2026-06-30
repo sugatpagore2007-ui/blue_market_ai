@@ -1,0 +1,107 @@
+Blue Forex Market AI — Final One Folder
+
+1) Install packages:
+   pip install -r requirements.txt
+   pip install -r requirements_ml_optional.txt
+
+2) Run Blue:
+   python main.py
+
+3) Type simple commands:
+   help
+   gold
+   best
+   train
+   learn on
+   learn status
+   use exness
+   connect mt5
+   risk
+   trades
+   breakeven gold
+   stop
+
+4) To train ready ML data:
+   train
+   ml report
+
+5) Pair commands are generic:
+   breakeven gold / breakeven eur / breakeven btc
+   close half gold / close half eur / close half btc
+   trail gold / trail eur / trail btc
+
+Live trading is disabled/protected by default. Test on demo first.
+
+PHASE 15.6 VOICE UPDATE
+When you run python main.py, Blue starts background voice automatically.
+You can type at Blue > while speaking commands like:
+  hey blue check gold
+  hey blue show me best trade
+  hey blue train your brain
+  hey blue stop everything
+Check voice with: voice background status
+Stop voice with: voice off
+
+
+Phase 15.7 win-rate commands: win rate | connected account win rate | gold win rate | take out win rate of btc | show everything
+
+
+Phase 15.9 note: Autopilot now prints SIGNAL BUY/SELL separately from auto WAIT/BLOCK so blocked trades do not look like missing signals.
+
+
+PHASE 15.10 QUICK TEST
+1) Open MT5 manually and login to demo.
+2) Run: python main.py
+3) Type: connect mt5
+4) Type: autopilot on
+
+Demo autopilot execution is enabled in this build. Real account auto-execution is still blocked.
+
+
+## Phase 15.13 — Autopilot Trade Basis
+
+Autopilot now prints a full `AUTOPILOT TRADE BASIS / WHY BLUE SELECTED THIS SETUP` card before trying to place the selected demo order. This shows the entry basis, SL/TP plan, confidence, grade, ML score, market context, warnings, and filters checked.
+
+Commands:
+
+```text
+connect mt5
+autopilot on
+```
+
+
+## Phase 15.15 Order Execution Doctor
+
+Commands:
+
+```text
+order doctor
+execution doctor
+why no order
+order doctor gold
+execution doctor eurusd
+order check btc
+```
+
+This is read-only. It diagnoses why MT5/autopilot may not punch an order and never places trades by itself.
+
+
+## Phase 15.16 — Internet / Environment Learning Brain
+
+Blue can now learn public market context from trusted internet/RSS sources using commands like `internet seed`, `internet learn`, `internet report`, and `baby brain`. This memory is safe: it supports explanations and no-trade context only, and it cannot place orders or bypass autopilot/MT5 guardrails. See `PHASE15_16_INTERNET_LEARNING_BRAIN_GUIDE.md`.
+
+
+## Phase 15.18 — Parallel Voice + Text Commands
+
+Blue now keeps the existing command names and supports voice + typed commands together.
+Type `voice`, `talk`, `voice text on`, `dual mode`, or `parallel mode` to start non-blocking voice listening.
+The terminal prompt stays active, so you can type commands while Blue listens.
+Use `voice text status` to check the listener.
+See `PHASE15_18_PARALLEL_VOICE_TEXT_COMMANDS_GUIDE.md` for the full command list.
+
+
+## Phase 15.19 — Neural Network Brain + Order Punch Shield
+- New neural commands: neural help, neural train, neural report, neural predict gold, neural on/off.
+- Best model: CNN + BiLSTM + Attention with TensorFlow; fallback MLP if TensorFlow is missing.
+- Order Punch Shield adds order_check before order_send, price refresh, filling-mode fallback, and clearer MT5 diagnostics.
+- Old commands are kept unchanged.

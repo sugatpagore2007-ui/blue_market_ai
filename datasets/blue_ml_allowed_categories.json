@@ -1,0 +1,71 @@
+{
+  "setup_type": [
+    "liquidity_sweep",
+    "breakout",
+    "reversal",
+    "trend_follow",
+    "order_block_retest",
+    "fvg_retest",
+    "range_rejection",
+    "support_resistance"
+  ],
+  "session": [
+    "asia",
+    "london",
+    "new_york",
+    "overlap"
+  ],
+  "market_regime": [
+    "bullish",
+    "bearish",
+    "sideways",
+    "high_volatility",
+    "low_volatility"
+  ],
+  "news_risk": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "candlestick_pattern": [
+    "bullish_engulfing",
+    "bearish_engulfing",
+    "hammer",
+    "shooting_star",
+    "morning_star",
+    "evening_star",
+    "doji",
+    "pin_bar_bullish",
+    "pin_bar_bearish",
+    "inside_bar",
+    "outside_bar",
+    "piercing_line",
+    "dark_cloud_cover",
+    "three_white_soldiers",
+    "three_black_crows",
+    "tweezer_bottom",
+    "tweezer_top",
+    "marubozu_bullish",
+    "marubozu_bearish",
+    "inverted_hammer",
+    "hanging_man",
+    "harami_bullish",
+    "harami_bearish",
+    "none"
+  ],
+  "candlestick_bias": [
+    "bullish",
+    "bearish",
+    "neutral"
+  ],
+  "dxy_bias": [
+    "usd_bullish",
+    "usd_bearish",
+    "neutral"
+  ],
+  "result": [
+    "win",
+    "loss",
+    "breakeven"
+  ]
+}

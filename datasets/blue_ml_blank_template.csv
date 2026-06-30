@@ -1,0 +1,1 @@
+trade_id,source_type,symbol,timeframe,action,setup_type,session,market_regime,news_risk,spread_pips,atr_pips,rr_ratio,rule_confidence,tf_alignment,liquidity_sweep,fvg_present,order_block_present,candlestick_pattern,candlestick_bias,candlestick_strength,dxy_bias,source_knowledge,entry_time,exit_time,entry_price,stop_loss,take_profit_1,take_profit_2,exit_price,result,pnl_r,notes

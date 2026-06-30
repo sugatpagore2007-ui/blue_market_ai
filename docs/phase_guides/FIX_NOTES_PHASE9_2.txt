@@ -1,0 +1,15 @@
+Blue Market AI Phase 9.2 Fix Notes
+
+What I found:
+1) Your uploaded config still showed old Phase 6 name/version even though Phase 9 ML was added.
+2) Real-account permission flags were set True while demo guards were also True. That is confusing and unsafe.
+3) MT5 popup suppression appeared as False earlier in config and True later. Final Python value was True, but duplicate conflicting settings are confusing.
+4) requirements.txt made XGBoost/LightGBM/CatBoost mandatory. On some Python versions, especially newer builds, that can break installation even though Blue can run without them.
+5) Autopilot state is currently enabled in blue_autopilot_state.json. If Blue starts in an unexpected state, run: blue autopilot off, then blue autopilot on.
+
+Fixed:
+- safer config
+- clearer Phase 9.2 naming
+- optional ML requirements separated
+- no-popup MT5 settings forced on
+- real-account auto permissions reset off
