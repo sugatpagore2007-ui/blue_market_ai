@@ -1,0 +1,50 @@
+BLUE FOREX MARKET AI — FINAL ALL UPGRADES ONE-FOLDER BUILD
+===========================================================
+
+Run:
+  python main.py
+
+Recommended first commands inside Blue:
+  help
+  connect mt5
+  win rate
+  train
+  autopilot on
+
+Voice:
+  voice
+  voice off
+  voice status
+
+Useful docs:
+  FINAL_UPGRADES_SUMMARY.md
+  docs/COMMANDS_AND_MEANINGS.md
+  docs/phase_guides/
+  presentation/
+
+Demo autopilot checklist:
+  1. Open MT5 manually.
+  2. Login to demo/trial account.
+  3. Turn Algo Trading ON.
+  4. Run python main.py.
+  5. Type connect mt5.
+  6. Type autopilot on.
+
+Safety:
+  This build is demo-first. Real-account automatic execution is blocked by default.
+
+
+## Phase 15.18 — Parallel Voice + Text Commands
+
+Blue now keeps the existing command names and supports voice + typed commands together.
+Type `voice`, `talk`, `voice text on`, `dual mode`, or `parallel mode` to start non-blocking voice listening.
+The terminal prompt stays active, so you can type commands while Blue listens.
+Use `voice text status` to check the listener.
+See `PHASE15_18_PARALLEL_VOICE_TEXT_COMMANDS_GUIDE.md` for the full command list.
+
+
+## Phase 15.19 — Neural Network Brain + Order Punch Shield
+- New neural commands: neural help, neural train, neural report, neural predict gold, neural on/off.
+- Best model: CNN + BiLSTM + Attention with TensorFlow; fallback MLP if TensorFlow is missing.
+- Order Punch Shield adds order_check before order_send, price refresh, filling-mode fallback, and clearer MT5 diagnostics.
+- Old commands are kept unchanged.

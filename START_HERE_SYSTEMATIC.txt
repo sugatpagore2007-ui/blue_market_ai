@@ -1,0 +1,14 @@
+BLUE FOREX AI — SYSTEMATIC PHASE 16.2 PACKAGE
+
+1) Open this folder in VS Code.
+2) Install dependencies:
+   pip install -r requirements.txt
+3) Open MT5 manually, log in, and enable Algo Trading.
+4) Run:
+   python main.py
+
+Important:
+- Voice does NOT auto-start. Type: voice
+- Autopilot uses the latest Phase 16.2 logic.
+- All phase guides are now in docs/phases/.
+- Runtime state JSON files remain in root for compatibility.

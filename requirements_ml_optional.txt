@@ -1,0 +1,20 @@
+# Optional advanced ML engines for Phase 9.
+# Install this only after the main app opens successfully.
+# If any package fails on your Python version, Blue will still work with fallback + RandomForest.
+xgboost>=2.0.0
+lightgbm>=4.0.0
+catboost>=1.2.0
+
+# Optional: lets Phase 12 try to fetch public YouTube captions when available.
+youtube-transcript-api>=0.6.2
+
+# Optional: lets Phase 14 discover public videos from a YouTube channel.
+yt-dlp>=2025.1.0
+
+# Optional: full TA-Lib candlestick CDL* pattern scanner.
+# On Windows this may need a prebuilt wheel or conda-forge install.
+TA-Lib>=0.4.32
+tensorflow>=2.12
+numpy
+scikit-learn
+joblib
