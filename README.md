@@ -1,3 +1,11 @@
+# Blue Forex AI — Systematic Phase 16.2 Package
+
+This package reorganizes the project into one cleaner production folder. All phase guides are collected in `docs/phases/`, while code paths remain backward-compatible so existing imports and commands keep working.
+
+Start with `START_HERE_SYSTEMATIC.txt`.
+
+---
+
 # Blue Forex Market AI — Final All Upgrades Build
 
 This is the combined final build from the first Forex AI project through Phase 15.13.
@@ -274,3 +282,5 @@ Autopilot scans every 5 minutes, generates evolution pulses during scan cycles, 
 Current daily rule: max 2 trades/day = 1 Gold slot + 1 other-pair slot across London/NY. If London gives no valid trade, NY can still take only the same two slots.
 
 Guide: `PHASE16_2_AUTONOMOUS_EVOLUTION_ENGINE_GUIDE.md`
+#   B l u e  
+ 
