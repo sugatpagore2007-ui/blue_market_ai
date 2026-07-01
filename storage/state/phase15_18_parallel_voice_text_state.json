@@ -1,0 +1,19 @@
+{
+  "phase": "15.18",
+  "name": "Parallel Voice + Text Commands",
+  "voice_and_text_parallel": true,
+  "kept_existing_commands": true,
+  "new_commands": [
+    "voice text on",
+    "voice text off",
+    "voice text status",
+    "dual mode",
+    "parallel mode",
+    "both mode"
+  ],
+  "safety": {
+    "voice_blocks_prompt_only_commands": true,
+    "manual_buy_sell_from_voice_blocked": true,
+    "mt5_auto_launch": false
+  }
+}

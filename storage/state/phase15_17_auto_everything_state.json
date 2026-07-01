@@ -1,0 +1,7 @@
+{
+  "full_auto_enabled": true,
+  "updated_at": null,
+  "last_start": null,
+  "last_stop": null,
+  "note": "Phase 15.17 default: automatic systems start when python main.py runs. Use full auto off to disable auto-start."
+}

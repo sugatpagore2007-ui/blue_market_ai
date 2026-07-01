@@ -1,0 +1,5 @@
+{
+  "source": "auto",
+  "updated_at": "created by Phase 15.14 package",
+  "note": "auto = MT5 first, Yahoo fallback; use mt5 data for broker-only candles"
+}
