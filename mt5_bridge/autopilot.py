@@ -59,6 +59,7 @@ except Exception:
 from .terminal import ensure_connected
 from .auto_executor import auto_status_text, execute_signal_if_allowed
 from .auto_manager import auto_manager_status, manage_once, start_auto_manager_background, auto_manager_background_status
+from .background_trade_events import format_autopilot_trade_opened_card, handle_autopilot_trade_opened
 from utils.symbols import resolve_symbol
 from analysis.signal_engine import build_signal
 from storage.database import save_signal
@@ -310,10 +311,9 @@ def _scan_symbol(symbol_text: str) -> str:
         if "AUTO TRADE DONE" in exec_msg:
             _print_order_punched_card(result, exec_msg)
             try:
-                print("Immediate manager check after new trade:", flush=True)
-                print(manage_once(), flush=True)
+                handle_autopilot_trade_opened(result, exec_msg, print_fn=print)
             except Exception as exc:
-                print(f"Immediate manager check error: {exc}", flush=True)
+                print(f"Phase 16.3 background trade event skipped safely: {exc}", flush=True)
             speak(f"Auto trade sent for {name}. Confidence {result.get('confidence')} percent. Auto manager is active.", block=False)
         elif float(result.get("confidence", 0) or 0) >= float(MIN_AUTO_TRADE_CONFIDENCE):
             speak(f"{name} reached auto threshold, but order was skipped. {exec_msg[:180]}", block=False)
@@ -326,26 +326,7 @@ def _print_order_punched_card(result: Dict[str, Any], exec_msg: str) -> None:
     """Immediate clear card after order is punched. Does not wait for cycle end."""
     if "AUTO TRADE DONE" not in str(exec_msg):
         return
-    lines = [
-        "",
-        "█" * 72,
-        "ORDER PUNCHED BY BLUE AUTOPILOT",
-        "█" * 72,
-        f"Symbol      : {result.get('symbol')}",
-        f"Action      : {str(result.get('action', '')).upper()}",
-        f"Confidence  : {result.get('confidence')}%",
-        f"Grade       : {_overall_grade(result) or 'N/A'}",
-        f"Entry plan  : {result.get('entry')}",
-        f"Stop Loss   : {result.get('stop_loss')}",
-        f"Target 1    : {result.get('target_1')}",
-        f"Target 2    : {result.get('target_2')}",
-        "Manager     : AUTO ON — BE / partial / trailing will run in background",
-        "Terminal    : FREE — you can type any command now",
-        "Next command : trades | profit | manager | breakeven <symbol> | close half <symbol>",
-        "█" * 72,
-        "",
-    ]
-    print("\n".join(lines), flush=True)
+    print(format_autopilot_trade_opened_card(result, exec_msg), flush=True)
 
 def _sleep_with_stop(total_seconds: int) -> None:
     """Sleep in small chunks so 'blue autopilot off' responds faster."""
@@ -449,10 +430,9 @@ def _autopilot_loop(scan_seconds: int = DEFAULT_SCAN_SECONDS, cycles: int = DEFA
                         except Exception as exc:
                             print(f"Phase 16.2 post-order reflection skipped safely: {exc}", flush=True)
                         try:
-                            print("Immediate manager check after new trade:", flush=True)
-                            print(manage_once(), flush=True)
+                            handle_autopilot_trade_opened(result, exec_msg, print_fn=print)
                         except Exception as exc:
-                            print(f"Immediate manager check error: {exc}", flush=True)
+                            print(f"Phase 16.3 background trade event skipped safely: {exc}", flush=True)
                         speak(f"Autopilot selected a valid setup: {name}. Trade sent. Auto manager is active.", block=False)
                     else:
                         # Keep going if the chosen instrument is not available, already open,

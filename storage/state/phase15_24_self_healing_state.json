@@ -1,7 +1,0 @@
-{
-  "enabled": true,
-  "auto_fix_safe_files": true,
-  "last_startup_check": "2026-06-23 15:21:30",
-  "last_issue": "MT5 execution needs MetaTrader5. Install with: pip install MetaTrader5",
-  "last_fix": "Created state file: phase15_24_self_healing_state.json"
-}

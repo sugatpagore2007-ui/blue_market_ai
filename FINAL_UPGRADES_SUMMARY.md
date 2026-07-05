@@ -133,3 +133,11 @@ Safety: advisory only; does not bypass Order Punch Shield or risk filters.
 # Phase 16.2 — Autonomous Evolution Engine
 
 Added automatic Monday reports, 5-minute autopilot scans, autopilot evolution pulse, post-order reflection seed, market DNA, source trust, verified-learning promotion pipeline, and confidence calibration foundation. Works automatically and also inside autopilot.
+
+
+## Phase 16.3 — Background Autopilot Trade Events
+- Immediate trade-opened card after autopilot order success.
+- Auto manager starts/continues automatically after new trade.
+- Immediate manager scan after entry.
+- Terminal remains free for commands during autopilot.
+- Trade event log: reports/autopilot_trade_events.jsonl

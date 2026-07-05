@@ -1,5 +1,5 @@
 APP_NAME = "Blue Forex Market AI Phase 15.23 — Smart Autopilot Session Guard"
-VERSION = 'v15.23-smart-autopilot-session-guard'
+VERSION = 'v16.3-background-autopilot-trade-events'
 
 SYMBOLS = {
     "gold": "GC=F", "xauusd": "GC=F", "xau/usd": "GC=F", "xau": "GC=F",

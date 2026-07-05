@@ -1,9 +1,0 @@
-{
-  "enabled": true,
-  "background_enabled": true,
-  "min_samples_to_adjust": 5,
-  "max_confidence_boost": 5,
-  "max_confidence_cut": 12,
-  "last_calibration_utc": null,
-  "notes": []
-}
