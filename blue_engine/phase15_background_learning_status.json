@@ -1,0 +1,50 @@
+{
+  "running": true,
+  "started_at": "2026-07-06T06:53:48.844758",
+  "stopped_at": null,
+  "loop_count": 1,
+  "total_new_rows": 10,
+  "last_run": "2026-07-06T06:53:52.232866",
+  "last_message": "Startup auto-learning checked sources; imported 10 new ML rows. Imported 10 new rows. Auto retrain waits for 25+ new rows. | Internet learning complete. New observations saved: 16. Sources checked: 3. Warnings: 1. | Need 40+ labeled rows with both wins and losses. Found 10 rows (4 wins, 6 losses).",
+  "last_error": null,
+  "next_run_estimate": "2026-07-06T06:59:07.164846",
+  "last_result": {
+    "ok": true,
+    "ran": true,
+    "message": "Startup auto-learning checked sources; imported 10 new ML rows. Imported 10 new rows. Auto retrain waits for 25+ new rows. | Internet learning complete. New observations saved: 16. Sources checked: 3. Warnings: 1. | Need 40+ labeled rows with both wins and losses. Found 10 rows (4 wins, 6 losses).",
+    "new_rows": 10,
+    "steps": [
+      "journal:0",
+      "mt5:10"
+    ],
+    "errors": [],
+    "trained": false,
+    "train_result": {
+      "ok": false,
+      "message": "Imported 10 new rows. Auto retrain waits for 25+ new rows."
+    },
+    "internet_learning": {
+      "ok": true,
+      "ran": true,
+      "saved": 16,
+      "checked_sources": 3,
+      "warnings": [
+        "DailyFX Market News RSS: no readable items found"
+      ],
+      "message": "Internet learning complete. New observations saved: 16. Sources checked: 3. Warnings: 1.",
+      "report_file": "reports\\internet_learning_report.md",
+      "dataset_file": "datasets\\blue_internet_knowledge_dataset.csv"
+    },
+    "neural_learning": {
+      "ok": false,
+      "trained": false,
+      "message": "Need 40+ labeled rows with both wins and losses. Found 10 rows (4 wins, 6 losses).",
+      "rows": 10,
+      "wins": 4,
+      "losses": 6,
+      "ran": true
+    },
+    "at": "2026-07-06T06:53:52.232866"
+  },
+  "updated_at": "2026-07-06T06:54:07.164866"
+}

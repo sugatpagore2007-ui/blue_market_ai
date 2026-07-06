@@ -1,0 +1,2 @@
+{"time": "2026-06-23 15:21:30", "kind": "startup_check", "message": "Startup self-check complete. Fixed 1 safe issue(s).", "details": {"fixed": ["Created state file: phase15_24_self_healing_state.json"], "warnings": ["MT5 execution needs MetaTrader5. Install with: pip install MetaTrader5"]}}
+{"time": "2026-07-06 12:23:48", "kind": "startup_check", "message": "Startup self-check complete. No safe repair needed.", "details": {"fixed": [], "warnings": []}}

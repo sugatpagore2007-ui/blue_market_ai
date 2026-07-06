@@ -1,0 +1,61 @@
+{
+  "enabled": true,
+  "background": true,
+  "running": true,
+  "interval_seconds": 900,
+  "last_pulse": "2026-07-06T06:53:54+00:00",
+  "last_message": "Signal reviewed by Autonomous Evolution Engine: ETHUSD score 93.0",
+  "last_monday_report_date": "2026-07-06",
+  "autopilot_scan_seconds": 300,
+  "source_trust": {
+    "mt5_history": 95,
+    "blue_journal": 90,
+    "cme_group": 85,
+    "backtest": 80,
+    "economic_calendar": 75,
+    "internet": 35,
+    "video_notes": 30
+  },
+  "promotion_pipeline": {
+    "sandbox": [],
+    "historical_validation": [],
+    "demo_validation": [],
+    "production_candidates": []
+  },
+  "market_dna": {
+    "XAUUSD": {
+      "observations": 2,
+      "notes": [
+        "reserved_gold_slot",
+        "high_quality_candidate"
+      ],
+      "last_seen": "2026-07-06T06:54:02+00:00",
+      "last_score": 93.0
+    },
+    "ETHUSD": {
+      "observations": 2,
+      "notes": [
+        "high_quality_candidate"
+      ],
+      "last_seen": "2026-07-06T06:54:14+00:00",
+      "last_score": 93.0
+    },
+    "XAGUSD": {
+      "observations": 1,
+      "notes": [
+        "high_quality_candidate"
+      ],
+      "last_seen": "2026-07-06T06:54:09+00:00",
+      "last_score": 94.0
+    }
+  },
+  "confidence_calibration": {},
+  "autopilot": {
+    "cycle_count": 1,
+    "last_cycle_at": "2026-06-29T16:14:23+00:00",
+    "last_best_gold": "XAUUSD",
+    "last_best_other": null
+  },
+  "updated_at": "2026-07-06T06:54:14+00:00",
+  "started_at": "2026-07-06T06:53:48+00:00"
+}

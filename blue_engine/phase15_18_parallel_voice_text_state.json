@@ -1,0 +1,34 @@
+{
+  "full_auto_enabled": true,
+  "updated_at": "2026-07-06T12:23:48",
+  "last_start": "2026-07-06T12:23:48",
+  "last_stop": null,
+  "last_results": [
+    "Internet sources: Internet sources ready. Added 0; total 3.",
+    "Internet learning: Internet Learning Brain is ON. Background internet learning is ON.",
+    "Background learning: Background auto-learning started. It checks for new closed trades every 300 seconds while Blue is running.",
+    "Autopilot: Blue autopilot ON. It is now running in background, so you can keep typing commands in VS Code terminal.",
+    "Cognitive Architecture: Cognitive Architecture background worker started.",
+    "CME Group Brain: CME Institutional Data Brain background worker started.",
+    "Autonomous Evolution: Autonomous Evolution Engine background worker started.",
+    "Voice listener: OFF by config. Type: voice"
+  ],
+  "phase": "15.18",
+  "name": "Parallel Voice + Text Commands",
+  "voice_and_text_parallel": true,
+  "kept_existing_commands": true,
+  "new_commands": [
+    "voice text on",
+    "voice text off",
+    "voice text status",
+    "dual mode",
+    "parallel mode",
+    "both mode"
+  ],
+  "safety": {
+    "voice_blocks_prompt_only_commands": true,
+    "manual_buy_sell_from_voice_blocked": true,
+    "mt5_auto_launch": false
+  },
+  "last_warnings": []
+}

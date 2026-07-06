@@ -1,0 +1,60 @@
+{
+  "XAUUSD": {
+    "symbol": "XAUUSD",
+    "seen": 1,
+    "best_sessions": {
+      "Off kill zone": 1
+    },
+    "setup_counts": {
+      "bearish_/_discount": 1
+    },
+    "confidence_sum": 85.0,
+    "last_seen": "2026-07-06T06:54:02+00:00",
+    "personality_notes": [
+      "gold_reserved_slot"
+    ],
+    "average_confidence": 85.0
+  },
+  "ETH": {
+    "symbol": "ETH",
+    "seen": 1,
+    "best_sessions": {
+      "Off kill zone": 1
+    },
+    "setup_counts": {
+      "range_/_discount": 1
+    },
+    "confidence_sum": 62.0,
+    "last_seen": "2026-07-06T06:54:07+00:00",
+    "personality_notes": [],
+    "average_confidence": 62.0
+  },
+  "XAGUSD": {
+    "symbol": "XAGUSD",
+    "seen": 1,
+    "best_sessions": {
+      "Off kill zone": 1
+    },
+    "setup_counts": {
+      "range_/_discount": 1
+    },
+    "confidence_sum": 86.0,
+    "last_seen": "2026-07-06T06:54:09+00:00",
+    "personality_notes": [],
+    "average_confidence": 86.0
+  },
+  "ETHUSD": {
+    "symbol": "ETHUSD",
+    "seen": 1,
+    "best_sessions": {
+      "Off kill zone": 1
+    },
+    "setup_counts": {
+      "bearish_/_discount": 1
+    },
+    "confidence_sum": 85.0,
+    "last_seen": "2026-07-06T06:54:14+00:00",
+    "personality_notes": [],
+    "average_confidence": 85.0
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "last_journal_import": {
+    "csv_path": "datasets\\blue_journal_learning_20260706_122352.csv",
+    "closed_journal_rows_read": 0,
+    "labeled_rows": 0,
+    "rows_seen": 0,
+    "duplicates_skipped": 0,
+    "imported_rows": 0,
+    "trained": false,
+    "trained_message": "training skipped",
+    "at": "2026-07-06T06:53:52.246807"
+  },
+  "updated_at": "2026-07-06T06:54:07.162712",
+  "last_mt5_import": {
+    "days": 30,
+    "timeframe": "5m",
+    "csv_path": "datasets\\mt5_history_30d_20260706_122401.csv",
+    "rows": 10,
+    "rows_seen": 10,
+    "duplicates_skipped": 0,
+    "deals_read": 29,
+    "imported_rows": 10,
+    "trained": false,
+    "trained_message": "training skipped",
+    "at": "2026-07-06T06:54:01.716011"
+  },
+  "last_startup_auto_learning": {
+    "new_rows": 10,
+    "steps": [
+      "journal:0",
+      "mt5:10"
+    ],
+    "errors": [],
+    "trained": false,
+    "train_message": "Imported 10 new rows. Auto retrain waits for 25+ new rows.",
+    "at": "2026-07-06T06:54:01.719025"
+  },
+  "last_background_auto_learning": {
+    "ok": true,
+    "ran": true,
+    "message": "Startup auto-learning checked sources; imported 10 new ML rows. Imported 10 new rows. Auto retrain waits for 25+ new rows. | Internet learning complete. New observations saved: 16. Sources checked: 3. Warnings: 1. | Need 40+ labeled rows with both wins and losses. Found 10 rows (4 wins, 6 losses).",
+    "new_rows": 10,
+    "steps": [
+      "journal:0",
+      "mt5:10"
+    ],
+    "errors": [],
+    "trained": false,
+    "train_result": {
+      "ok": false,
+      "message": "Imported 10 new rows. Auto retrain waits for 25+ new rows."
+    },
+    "internet_learning": {
+      "ok": true,
+      "ran": true,
+      "saved": 16,
+      "checked_sources": 3,
+      "warnings": [
+        "DailyFX Market News RSS: no readable items found"
+      ],
+      "message": "Internet learning complete. New observations saved: 16. Sources checked: 3. Warnings: 1.",
+      "report_file": "reports\\internet_learning_report.md",
+      "dataset_file": "datasets\\blue_internet_knowledge_dataset.csv"
+    },
+    "neural_learning": {
+      "ok": false,
+      "trained": false,
+      "message": "Need 40+ labeled rows with both wins and losses. Found 10 rows (4 wins, 6 losses).",
+      "rows": 10,
+      "wins": 4,
+      "losses": 6,
+      "ran": true
+    },
+    "at": "2026-07-06T06:53:52.232866"
+  }
+}
